@@ -1,0 +1,10 @@
+﻿@model WebAtividadeEntrevista.Models.BeneficiarioModel
+
+@{
+    ViewBag.Title = "Beneficiários";
+}
+
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.ActionLink("Beneficiarios", "FormsBene", "Beneficiario", new { }, new { @class = "btn btn-sm btn-primary pull-right" })
+<table id="gridBeneficiario" class="table"></table>
+

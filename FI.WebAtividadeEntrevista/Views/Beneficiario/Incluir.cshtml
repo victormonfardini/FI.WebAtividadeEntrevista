@@ -1,0 +1,14 @@
+﻿@model WebAtividadeEntrevista.Models.BeneficiarioModel
+
+@{
+    ViewBag.Title = "Beneficiários";
+}@section scripts{
+    <script>
+    var urlClienteList = '@Url.Action("BeneficiariosList", "Beneficiario", new { area = "" })';
+
+    </script>
+    @Scripts.Render("~/bundles/listBeneficiarios")
+}
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.Partial("Forms")
+
